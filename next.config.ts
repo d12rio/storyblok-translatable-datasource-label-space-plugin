@@ -1,17 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+  // Storyblok loads the plugin from a public HTTPS URL, so local dev runs through a tunnel.
+  allowedDevOrigins: ["*.ngrok.app", "*.ngrok-free.app", "*.ngrok.dev", "*.ngrok-free.dev"],
+  serverExternalPackages: ["@storyblok/app-extension-auth", "openid-client"],
 };
 
 export default nextConfig;

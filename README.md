@@ -56,8 +56,8 @@ UI labels (buttons, form errors, aria labels, cookie banner texts) often live in
 
 This repo also ships a generator prompt for **any** Space Plugin, not just this one. It covers OAuth, the Management API, storage without a database, a Storyblok look on ui-sdk, optional AI features, and registering the plugin.
 
-- **As a prompt:** point your coding agent at [`generator/PROMPT.md`](generator/PROMPT.md) (via its raw GitHub URL) and replace the example under "The app to build" with your idea.
-- **As an Agent Skill:** `npx skills add <owner>/<repo> --skill storyblok-space-plugin` installs [`skills/storyblok-space-plugin`](skills/storyblok-space-plugin/SKILL.md) for Claude Code and other agents.
+- **As a prompt:** point your coding agent at [`generator/PROMPT.md`](generator/PROMPT.md) (raw URL: `https://raw.githubusercontent.com/d12rio/storyblok-translatable-datasource-label-space-plugin/main/generator/PROMPT.md`) and replace the example under "The app to build" with your idea.
+- **As an Agent Skill:** `npx skills add d12rio/storyblok-translatable-datasource-label-space-plugin --skill storyblok-space-plugin` installs [`skills/storyblok-space-plugin`](skills/storyblok-space-plugin/SKILL.md) for Claude Code and other agents.
 
 `generator/PROMPT.md` is the source. After editing it, run `node generator/build-skill.mjs` to regenerate the skill.
 
